@@ -89,6 +89,10 @@
       background-color: #2AABEE;
     }
 
+    .github:hover{
+      background-color: #2AABEE;
+    }
+
     .social {
       position: relative;
       margin: 10px;
@@ -177,6 +181,12 @@
         <span class="icon whatsapp"><i class="fab fa-whatsapp"></i></span>
       </div>
       <!-- End whatsapp Icon -->
+
+      <!-- Start github Icon -->
+      <div id="github" onclick="navigate(this.id)" class="social github">
+        <span class="icon github"><i class="fab fa-github"></i></span>
+      </div>
+      <!-- End github Icon -->
       
     </div>
 
@@ -221,6 +231,9 @@
         }
         else if (id === "whatsapp") {
           window.open("https://web.whatsapp.com", '_blank').focus(); //Add the url to your telegram account
+        }
+        else if (id === "github") {
+          window.open("https://github.com", '_blank').focus(); //Add the url to your telegram account
         }
       }
 
