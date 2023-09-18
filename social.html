@@ -44,10 +44,6 @@
       font-size: 1.2em;
     }
 
-    .blog:hover {
-      background-color: #ffbd2f;
-    }
-
     .email:hover {
       background-color: #23c8c8;
     }
@@ -108,11 +104,6 @@
 
     <div class="wrapper">
 
-      <!-- Start blog Icon -->
-      <div id="blog" onclick="navigate(this.id)" class="social blog">
-        <span class="icon"><i class="fa-solid fa-blog"></i></span>
-      </div>
-      <!-- End blog Icon -->
 
       <!-- Start email Icon -->
       <div id="email" onclick="navigate(this.id)" class="social email">
@@ -187,10 +178,7 @@
 
         //if you want the URL to open in the same window use '_parent'  instead of '_blank'
 
-        if (id === "blog")
-          window.open("https://blog.shorouk.dev", '_blank').focus(); //Add the url to your blog
-
-        else if (id === "email") {
+        if (id === "email") {
           window.open("mailto:someone@yoursite.com", '_blank').focus(); //Add your email after "mailto:""
         }
 
